@@ -1,3 +1,4 @@
 depend:
 CFLAGS:-I${SYSTEMC_INSTALL}/include
 LDFLAGS:-L$SYSTEMC_INSTALL/lib-linux64 -lsystemc
+env_variables:SYSTEMC_INSTALL
