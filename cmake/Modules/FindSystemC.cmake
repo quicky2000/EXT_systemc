@@ -40,14 +40,14 @@ if("${PC_SYSTEMC}" STREQUAL "")
     find_path(SystemC_INCLUDE_DIR
               NAMES systemc.h
               PATHS ${SYSTEMC_PATHS}
-              HINTS {SYSTEMC_HINTS}
+              HINTS ${SYSTEMC_HINTS}
               PATH_SUFFIXES include
               DOC "Variable storing the location of SystemC header")
 
     find_library(SystemC_LIBRARY
               NAMES systemc
               PATHS ${SYSTEMC_PATHS}
-              HINTS {SYSTEMC_HINTS}
+              HINTS ${SYSTEMC_HINTS}
               PATH_SUFFIXES lib-linux64
               DOC "Variable storing the location of SystemC library")
     set(SystemC_VERSION ${SystemC_FIND_VERSION})
